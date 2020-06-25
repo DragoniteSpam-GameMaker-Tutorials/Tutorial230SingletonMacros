@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},"order":16,},
+    {"id":{"name":"scr_time","path":"scripts/scr_time/scr_time.yy",},"order":15,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":14,},
   ],
   "Options": [
