@@ -9,13 +9,22 @@ function __get_static_time() {
             frames: 0,
             total_time: current_time / 1000,
             
+            last_update_time: -1,
+            
             Update: function() {
+                
+                if (last_update_time == current_time) return;
+                
                 dt = delta_time / 1000000;
                 frames++;
                 total_time = current_time / 1000;
+                
+                last_update_time = current_time;
             },
         };
     }
+    
+    inst.Update();
     
     return inst;
 }
